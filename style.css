@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(38, 44, 38);
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+    height: 100%;
+}
+
+
+
+.menu {
+    width: 75%;
+    border-right: 2px solid white;
+    text-align: center;
+    color: white;
+    padding-right: 1%;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone jednake širine */
+    gap: 20px; /* Prostor između elemenata */
+}
+
+.menu h1 {
+    margin-top: 0%;
+}
+
+.meal {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.meal img {
+    max-width: 100%;
+    height: 200px; /* Visina slike */
+    object-fit: cover; /* Kropovanje slike */
+}
+
+
+
+/* Stil za kontejner korpe */
+.cart {
+    text-align: center;
+    width: 24%; /* Postavljamo širinu na 25% širine ekrana */
+    position: fixed; /* Fiksiramo sekciju na desnu stranu */
+    top: 0; /* Postavljamo sekciju na vrh ekrana */
+    right: 0; /* Postavljamo sekciju na desnu stranu */
+    height: 100%; /* Punimo visinu ekrana */
+    overflow-y: auto; /* Omogućavamo vertikalni scroll ako je potrebno */
+    color: white;
+}
+
+/* Stil za stavke u korpi */
+.cart-item {
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 71%);
+}
+
+
+.cart-item p {
+    font-size: 2vh;
+}
+
+/* Stil za sliku jela */
+.cart-item img {
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Stil za naziv jela */
+.cart-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Stil za cenu jela */
+.cart-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Stil za dugme uklanjanja */
+.cart-item button {
+    padding: 8px 15px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Stil za dugme uklanjanja na hover */
+.cart-item button:hover {
+    background-color: #d63b20;
+}
+
